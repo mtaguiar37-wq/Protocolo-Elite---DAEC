@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>POLICIA MILITAR - D.A.E.C Convocados</title>
+  <style>
+    :root{
+      --bg-black:#000;
+      --white:#ffffff;
+      --lime:#b7e21b; /* cor baseada no logo */
+      --panel-bg: rgba(0,0,0,0.6);
+      --glass: rgba(255,255,255,0.06);
+      --card-radius:16px;
+      --max-width:1100px;
+      --gap:14px;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      background:var(--bg-black);
+      color:var(--white);
+    }
+    .stage{
+      min-height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px;
+      box-sizing:border-box;
+      background-image: url('/mnt/data/e922dd5f-2294-464e-a9af-ea5e60b502c9.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center top 40px;
+    }
+    .card{
+      width:100%;
+      max-width:var(--max-width);
+      background:linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.75));
+      border-radius:var(--card-radius);
+      padding:28px;
+      box-sizing:border-box;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+      border: 4px solid rgba(255,255,255,0.06);
+      backdrop-filter: blur(4px);
+    }
+    header{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      margin-bottom:18px;
+    }
+    .logo-thumb{
+      width:120px;
+      height:120px;
+      background-image: url('/mnt/data/e922dd5f-2294-464e-a9af-ea5e60b502c9.png');
+      background-size: cover;
+      background-position:center;
+      border-radius:12px;
+      border:3px solid var(--white);
+      box-shadow:0 6px 18px rgba(0,0,0,0.6);
+      flex:0 0 120px;
+    }
+    h1{
+      font-size:28px;
+      margin:0;
+      color:var(--lime);
+      letter-spacing:1px;
+    }
+    p.lead{
+      margin:2px 0 0 0;
+      color:#DDD;
+      font-size:14px;
+    }
+    .meta{
+      margin-top:16px;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .meta .pill{
+      background:var(--glass);
+      padding:8px 12px;
+      border-radius:999px;
+      font-weight:600;
+      color:var(--white);
+      border:1px solid rgba(255,255,255,0.04);
+      font-size:13px;
+    }
+    .meta .pill .k{color:var(--lime); margin-right:6px; font-weight:700;}
+    .sections{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:18px;
+      margin-top:22px;
+    }
+    .box{
+      background: rgba(255,255,255,0.03);
+      padding:14px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.04);
+      min-height:120px;
+    }
+    .box h3{ margin:0 0 10px 0; color:var(--lime); font-size:15px;}
+    .list{ margin:0; padding:0 0 0 16px; color:#EFEFEF; }
+    .list li{ margin-bottom:8px; line-height:1.35; font-size:14px; }
+    .wide{ grid-column: 1 / -1; }
+    footer{ margin-top:18px; font-size:13px; color:#bbb; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;}
+    .role{ color:var(--lime); font-weight:700; margin-right:8px; }
+    @media (max-width:880px){
+      .sections{ grid-template-columns: 1fr; }
+      .logo-thumb{ display:none; }
+      h1{ font-size:22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="card" role="document" aria-label="Convocados Operação Pipa Combate">
+      <header>
+        <div class="logo-thumb" aria-hidden="true"></div>
+        <div>
+          <h1>POLICIA MILITAR — D.A.E.C</h1>
+          <p class="lead">Operação: Pipa Combate · Protocolo: Elite · Rádio: POLICIAELT</p>
+          <div class="meta" aria-hidden="false">
+            <div class="pill"><span class="k">Altitude</span>10000 pés</div>
+            <div class="pill"><span class="k">Rádio</span>POLICIAELT</div>
+            <div class="pill"><span class="k">Protocolo</span>Elite</div>
+            <div class="pill"><span class="k">Operação</span>Pipa Combate</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sections">
+        <div class="box">
+          <h3>Gestão</h3>
+          <ul class="list">
+            <li><span class="role">Gestor</span>2° Sargento Becker (01)</li>
+            <li><span class="role">Sub gestor</span>2° Sargento Madela (02)</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Supervisores</h3>
+          <ul class="list">
+            <li>Cb 1° Veio</li>
+            <li>Cb 1° Dias</li>
+            <li>Sd 1° Zezin</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Pilotos Elite</h3>
+          <ul class="list">
+            <li>Sd 1° Gb</li>
+            <li>Sd 1° Liam</li>
+            <li>Cb 1° Pereira</li>
+            <li>Sd 1° Mesquita</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Atiradores de Elite</h3>
+          <ul class="list">
+            <li>3° Sgt Sartori</li>
+            <li>Cb 2° Jeff</li>
+            <li>Cb 1° Kaua</li>
+            <li>Sd 1° Tadashi</li>
+            <li>Sd 2° Dimitrty</li>
+            <li>Sd 2° Guilherme</li>
+          </ul>
+        </div>
+
+        <div class="box wide">
+          <h3>Pilotos Probatorio</h3>
+          <ul class="list">
+            <li>Sd 1° Ryan de Chavas</li>
+            <li>Sd 2° Matheus</li>
+            <li>Sd 2° Dan</li>
+            <li>Sd 2° Bryan</li>
+            <li>Sd 2° Dexter</li>
+            <li>Sd 2° Benner</li>
+            <li>Sd 2° Vitor Leal</li>
+            <li>Sd 2° Armando</li>
+            <li>Sd 2° Gonzaga</li>
+          </ul>
+        </div>
+
+        <div class="box wide">
+          <h3>Atiradores Probatorio</h3>
+          <ul class="list">
+            <li>Sd 1° Korleone</li>
+            <li>Sd 1° Luckzyn</li>
+            <li>Sd 1° Riq Santos</li>
+            <li>Cb 1° Sena</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <footer>
+        <div>Documento gerado: <strong>D.A.E.C Convocados</strong></div>
+        <div>Layout: mantendo modelo — nomes sobre imagem de fundo</div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
